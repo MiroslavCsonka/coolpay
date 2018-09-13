@@ -5,4 +5,4 @@ $LOAD_PATH.unshift(File.join(__dir__, '..'))
 
 require 'lib/coolpay'
 
-puts CoolPay.call(ARGV)
+exit(Coolpay.new(ARGV, STDOUT, STDERR).call)
